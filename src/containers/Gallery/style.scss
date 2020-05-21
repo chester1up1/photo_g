@@ -1,0 +1,98 @@
+.gallery{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .add_photo{
+        position: fixed;
+        right: 20px;
+        top: 83vh;
+        .btn{
+            input{
+                display: none;
+            }
+            .file{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: #F2637E;
+                color: #ffffff;
+                width: 75px;
+                height: 75px;
+                border-radius: 90px;
+                font-weight: bold;
+                line-height: 75px;
+                font-size: 75px;
+                cursor: pointer;
+                p{
+                    margin-bottom: 20px;
+                }
+            }
+            .file:hover{
+                background-color: #F2527D; 
+            }
+        }
+    }
+    .all_photos{
+        display: flex;
+        justify-content: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        .photo{
+            transition: 0.2s;
+            padding: 2.5px;
+            position: relative;
+           img{
+            width: 100%;
+            height: 100%;
+           box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+           cursor: pointer;
+           }
+           
+        }
+        .PhotoFull{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            z-index: 101;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(7, 7, 7);
+            overflow:  hidden;
+            img{
+                object-fit: cover;
+               max-width: 100%;
+               max-height: 100%;
+               cursor: pointer;
+            }
+            .control_btn{
+                padding-right: 25px;
+                padding-left: 25px;
+                position: absolute;
+                bottom:45%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .close_btn{
+                position: absolute;
+                top: 10px;
+                right: 25px;
+            }
+            .delete_btn{
+                position: absolute;
+                bottom: 15px;
+                right: 25px;
+            }
+        }
+        .photo:hover{
+
+        }
+    }
+    
+}
+

@@ -1,0 +1,20 @@
+.top_panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #4ACAD9;
+    align-items: center;
+    min-height: 50px;
+    p{
+        margin-left: 25px;
+        margin-bottom: 0px;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: xx-large;
+        font-family: 'Raleway', sans-serif;
+    }
+    img{
+        margin-right: 25px;
+        cursor: pointer;
+    }
+}
